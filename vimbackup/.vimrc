@@ -1,4 +1,5 @@
 set number
+set encoding=utf-8
 syntax on
 set backspace=indent,eol,start
 colorscheme monokai
@@ -25,3 +26,5 @@ autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+" highlight for markdown
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
