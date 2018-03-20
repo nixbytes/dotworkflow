@@ -6,30 +6,33 @@ PERL_MM_OPT="INSTALL_BASE=/Users/stigadmin/perl5"; export PERL_MM_OPT;
 
 
 # custom alias for bash
-
+alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
 alias nv='ranger ~/notes'
 alias hs='history | grep -i'
 alias ls='ls -G'
-alias macmodel='sysctl hw.model'
-alias showfile='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app'
 alias emacs="emacs -nw"
-alias hidfile='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app'
 alias python='/usr/local/bin/python3.6'
 alias todo='todolist'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias cmdls="cat ~/.scripts/clf-ALL.md"
-alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
+alias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
 alias sshls="/usr/bin/grep -i Host /Users/stigadmin/.ssh/config |/usr/bin/grep"
 alias genpasswd='openssl rand -base64'
 alias cmdls="cat ~/.scripts/clf-ALL.md"
-alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
-alias hidfiles="defaults write com.apple.finder AppleShowAllFiles YES"
-alias showfiles="defaults write com.apple.finder AppleShowAllFiles NO"
 alias sshls="grep Host ~/.ssh/config"
 alias sshconfig="less ~/.ssh/config"
 alias dirnote='cd ~/notes/'
 
 
+
+# Mac specfic commands
+
+alias hidfiles="defaults write com.apple.finder AppleShowAllFiles YES"
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles NO"
+alias macmodel='sysctl hw.model'
+alias showfile='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app'
+alias hidfile='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app'
+
+# fzf command search from https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -38,3 +41,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
+
+# function for code that are useful
+
+# google translate
+
+t2s() { wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3
+"http://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=$(tr ' ' + <<<
+"$1")"; }
+
+
