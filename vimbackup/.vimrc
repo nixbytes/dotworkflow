@@ -1,13 +1,16 @@
 set number
 set encoding=utf-8
 set backspace=indent,eol,start
+" add full color in vim if supported 
+set t_Co=256
+set background=dark
 syntax on
 "color dracula
 "color atomdark
 "color inkpot
-color monokai
-color monokain
-
+"color monokai
+"colorscheme monokain
+colorscheme dracula
 
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
