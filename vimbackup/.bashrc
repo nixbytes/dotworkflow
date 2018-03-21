@@ -4,6 +4,10 @@ PERL5LIB="/Users/stigadmin/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PER
 PERL_MB_OPT="--install_base \"/Users/stigadmin/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/stigadmin/perl5"; export PERL_MM_OPT;
 
+# Bashrc and Vimrc sync
+
+alias Syncvim="cat ~/.vimrc > ~/.vim/vimbackup/.vimrc && echo 'sync vimrc done!!!'"
+alias Syncbash="cat ~/.bashrc > ~/.vim/vimbackup/.bashrc && echo 'sync bashrc done!!!'"
 
 # custom alias for bash
 alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
@@ -46,8 +50,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc
 
 # google translate
 
-t2s() { wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3
-"http://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=$(tr ' ' + <<<
-"$1")"; }
+t2s() { 
+
+wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3 "http://translate.google.com/translate_tts?ie=UTF-8&tl=en&q=$(tr ' ' + <<< "$1")"; 
+
+}
 
 

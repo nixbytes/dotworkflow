@@ -1,8 +1,13 @@
 set number
 set encoding=utf-8
-syntax on
 set backspace=indent,eol,start
-colorscheme monokai
+syntax on
+"color dracula
+"color atomdark
+"color inkpot
+color monokai
+color monokain
+
 
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
