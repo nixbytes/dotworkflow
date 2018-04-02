@@ -7,7 +7,9 @@ PERL_MM_OPT="INSTALL_BASE=/Users/stigadmin/perl5"; export PERL_MM_OPT;
 # Bashrc and Vimrc sync
 
 alias Syncvim="cat ~/.vimrc > ~/.vim/vimbackup/.vimrc && echo 'sync vimrc done!!!'"
+alias Updatevim="cat ~/.vim/vimbackup/.vimrc > ~/.vimrc && echo 'update vimrc done!!!'"
 alias Syncbash="cat ~/.bashrc > ~/.vim/vimbackup/.bashrc && echo 'sync bashrc done!!!'"
+alias Updatebash="cat ~/.vim/vimbackup/.bashrc >  ~/.bashrc && echo 'updated bashrc done!!!'"
 
 # custom alias for bash
 alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
