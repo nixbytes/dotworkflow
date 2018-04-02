@@ -14,3 +14,13 @@ listed items with configuration for projects
 
 - [beautifier.vim](https://github.com/maksimr/vim-jsbeautify)
 - [monokai.vim](https://github.com/sickill/vim-monokai)
+
+
+# add the following to profile file
+
+
+```shell
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
+```
