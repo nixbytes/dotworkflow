@@ -35,6 +35,8 @@ alias showfiles="defaults write com.apple.finder AppleShowAllFiles NO"
 alias macmodel='sysctl hw.model'
 alias showfile='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app'
 alias hidfile='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app'
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade"
+alias localip="ifconfig en0 inet | grep 'inet ' | awk ' { print $2 } '"
 
 # fzf command search from https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
