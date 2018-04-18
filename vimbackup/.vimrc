@@ -36,3 +36,12 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 " highlight for markdown
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
+" Plugin for https://github.com/junegunn/vim-plug
+call plug#begin()
+
+Plug 'sickill/vim-monokai'
+
+Plug 'maksimr/vim-jsbeautify'
+
+call plug#end()
