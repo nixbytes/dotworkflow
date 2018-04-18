@@ -44,4 +44,6 @@ Plug 'sickill/vim-monokai'
 
 Plug 'maksimr/vim-jsbeautify'
 
+Plug 'jaxbot/browserlink.vim'
+
 call plug#end()
