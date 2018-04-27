@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/ez/Dropbox/Repo/ezwebcraft-webapp/js'
 let g:netrw_dirhist_2='/Users/ez/Dropbox/Repo/ezwebcraft-webapp'
 let g:netrw_dirhist_3='/Users/ez/.vim'
+let g:netrw_dirhist_4='/Users/stigadmin/.vim'
+let g:netrw_dirhist_5='/Users/stigadmin/.vim/plugged'
+let g:netrw_dirhist_6='/Users/stigadmin/.vim'
+let g:netrw_dirhist_7='/Users/stigadmin'
