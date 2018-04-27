@@ -43,19 +43,23 @@ au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
 " Plugin for https://github.com/junegunn/vim-plug
 call plug#begin()
-
+" theme color
 Plug 'sickill/vim-monokai'
-
+" clean up syntax
 Plug 'maksimr/vim-jsbeautify'
-
+" live browser update
 Plug 'jaxbot/browserlink.vim'
-
+" display additional info
 Plug 'vim-airline/vim-airline'
-
+" improve HTML5
 Plug 'othree/html5.vim'
-
+" HTML close tag helper
 Plug 'alvan/vim-closetag'
-"Plug 'amirh/html-autoclosetag'
+" improved comment shortcut
+Plug 'tpope/vim-commentary'
+" improve javscript syntax
+Plug 'jelera/vim-javascript-syntax'
+" Plug 'amirh/html-autoclosetag'
 "Plug 'townk/vim-autoclose'
 
 call plug#end()
