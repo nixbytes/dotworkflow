@@ -3,7 +3,7 @@ set encoding=utf-8
 set backspace=indent,eol,start
 " add full color in vim if supported 
 set t_Co=256
-set background=dark
+"set background=dark
 syntax on
 "color dracula
 "color atomdark
@@ -47,8 +47,6 @@ call plug#begin()
 Plug 'sickill/vim-monokai'
 " clean up syntax
 Plug 'maksimr/vim-jsbeautify'
-" live browser update
-Plug 'jaxbot/browserlink.vim'
 " display additional info
 Plug 'vim-airline/vim-airline'
 " improve HTML5
@@ -59,6 +57,8 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-commentary'
 " improve javscript syntax
 Plug 'jelera/vim-javascript-syntax'
+" add git function and shortcut
+Plug 'tpope/vim-fugitive'
 " Plug 'amirh/html-autoclosetag'
 "Plug 'townk/vim-autoclose'
 
