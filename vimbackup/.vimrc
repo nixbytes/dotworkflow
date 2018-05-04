@@ -61,5 +61,13 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'tpope/vim-fugitive'
 " Plug 'amirh/html-autoclosetag'
 "Plug 'townk/vim-autoclose'
+" Plugin emmet for vim
+Plug 'mattn/emmet-vim'
 
 call plug#end()
+
+" Enable just for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+
