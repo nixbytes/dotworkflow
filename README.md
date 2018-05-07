@@ -7,6 +7,7 @@ listed items with configuration for projects
 - vim plugins
   - [beautifier.vim](https://github.com/maksimr/vim-jsbeautify)
   - [monokai.vim](https://github.com/sickill/vim-monokai)
+  - [vim-airline](https://github.com/vim-airline/vim-airline)
 
 
 
@@ -14,7 +15,8 @@ listed items with configuration for projects
 
 - [beautifier.vim](https://github.com/maksimr/vim-jsbeautify)
 - [monokai.vim](https://github.com/sickill/vim-monokai)
-
+- [vim airline](https://github.com/vim-airline/vim-airline)
+- [vim fugitive](https://github.com/tpope/vim-fugitive)
 
 # add the following to profile file
 
