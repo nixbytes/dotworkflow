@@ -63,6 +63,8 @@ Plug 'tpope/vim-fugitive'
 "Plug 'townk/vim-autoclose'
 " Plugin emmet for vim
 Plug 'mattn/emmet-vim'
+" Jedi for Vim
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
