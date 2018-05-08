@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/ez/Dropbox/Repo/MyJavaScript30'
-let g:netrw_dirhist_2='/Users/ez/Dropbox/Repo/MyJavaScript30/29 - Countdown Timer'
-let g:netrw_dirhist_3='/Users/ez/Documents/JavaScript30-master/30 - Whack A Mole'
-let g:netrw_dirhist_4='/Users/ez/Downloads/css-grid-master/03 - CSS Grid Fundamentals'
-let g:netrw_dirhist_5='/Users/ez/Downloads/css-grid-master'
-let g:netrw_dirhist_6='/Users/ez/Downloads'
-let g:netrw_dirhist_7='/Users/ez'
-let g:netrw_dirhist_8='/Users/stigadmin'
-let g:netrw_dirhist_9='/Users/stigadmin/Desktop'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/stigadmin/WorkNotes'
+let g:netrw_dirhist_2='/Users/stigadmin'
+let g:netrw_dirhist_3='/Users/stigadmin/WorkNotes'
