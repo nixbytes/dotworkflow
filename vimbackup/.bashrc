@@ -61,3 +61,4 @@ wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3 "http://translate.go
 }
 
 
+source $HOME/.cargo/env
