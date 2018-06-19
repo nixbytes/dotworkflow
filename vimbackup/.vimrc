@@ -63,8 +63,13 @@ Plug 'tpope/vim-fugitive'
 "Plug 'townk/vim-autoclose'
 " Plugin emmet for vim
 Plug 'mattn/emmet-vim'
+<<<<<<< HEAD
+" Better CSS3 support
+Plug 'hail2u/vim-css3-syntax'
+=======
 " Jedi for Vim
 Plug 'davidhalter/jedi-vim'
+>>>>>>> 8885575b781abfde6453ee46a9299c01b9852c66
 
 call plug#end()
 
