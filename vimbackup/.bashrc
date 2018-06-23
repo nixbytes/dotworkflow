@@ -10,6 +10,7 @@ alias Syncvim="cat ~/.vimrc > ~/.vim/vimbackup/.vimrc && echo '~/.vimrc --> ~/.v
 alias Updatevim="cat ~/.vim/vimbackup/.vimrc > ~/.vimrc && echo '~/.vim/vimbackup/.vimrc --> ~/.vimrc : update vimrc done!!!'"
 alias Syncbash="cat ~/.bashrc > ~/.vim/vimbackup/.bashrc && echo '~/.bashrc --> ~/.vim/vimbackup/.bashrc : sync bashrc done!!!'"
 alias Updatebash="cat ~/.vim/vimbackup/.bashrc >  ~/.bashrc && echo '~/.vim/vimbackup/.bashrc --> ~/.bashrc : updated bashrc done!!!'"
+export EDITOR=vim
 
 # custom alias for bash
 alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
@@ -17,7 +18,10 @@ alias nv='ranger ~/notes'
 alias hs='history | grep -i'
 alias ls='ls -G'
 alias emacs="emacs -nw"
+<<<<<<< HEAD
+=======
 #alias python='/usr/local/bin/python3.6'
+>>>>>>> bba2e2d843673a254a49d6ab19e6aa357b404b72
 alias todo='todolist'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
