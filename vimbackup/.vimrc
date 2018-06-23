@@ -4,6 +4,7 @@ set backspace=indent,eol,start
 " add full color in vim if supported 
 set t_Co=256
 "set background=dark
+let python_highlight_all=1
 syntax on
 "color dracula
 "color atomdark
@@ -63,18 +64,18 @@ Plug 'tpope/vim-fugitive'
 "Plug 'townk/vim-autoclose'
 " Plugin emmet for vim
 Plug 'mattn/emmet-vim'
-<<<<<<< HEAD
 " Better CSS3 support
 Plug 'hail2u/vim-css3-syntax'
-=======
-" Jedi for Vim
-Plug 'davidhalter/jedi-vim'
->>>>>>> 8885575b781abfde6453ee46a9299c01b9852c66
-
+" Flake8 python
+Plug 'nvie/vim-flake8'
+" NerdTree
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
 " Enable just for html/css
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-
+" nerdtree config
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
