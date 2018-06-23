@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/stigadmin/WorkNotes'
-let g:netrw_dirhist_2='/Users/stigadmin'
-let g:netrw_dirhist_3='/Users/stigadmin/WorkNotes'
+let g:netrw_dirhist_2='/Users/ez/Dropbox/Repo/weather-client'
+let g:netrw_dirhist_3='/Users/ez/Dropbox/Repo/weather-client/.idea'
+let g:netrw_dirhist_4='/Users/ez/Dropbox/Repo/weather-client'

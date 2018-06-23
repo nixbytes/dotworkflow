@@ -3,19 +3,20 @@ set encoding=utf-8
 set backspace=indent,eol,start
 " add full color in vim if supported 
 set t_Co=256
-"set background=dark
+" set background=dark
 let python_highlight_all=1
 syntax on
-"color dracula
-"color atomdark
-"color inkpot
-"color monokai
-"colorscheme monokain
+" color dracula
+" color atomdark
+" color inkpot
+" color monokai
+" colorscheme monokain
 colorscheme dracula
 
 " closing tags short
 :iabbrev </ </<C-X><C-O>
-
+" Mac OSX Clipboard
+set clipboard=unnamed
 
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
