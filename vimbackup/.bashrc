@@ -24,7 +24,7 @@ alias emacs="emacs -nw"
 #>>>>>>> bba2e2d843673a254a49d6ab19e6aa357b404b72
 alias todo='todolist'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-a1lias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
+alias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
 alias sshls="/usr/bin/grep -i Host /Users/stigadmin/.ssh/config |/usr/bin/grep"
 alias genpasswd='openssl rand -base64'
 alias cmdls="cat ~/.scripts/clf-ALL.md"
