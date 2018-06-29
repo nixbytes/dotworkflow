@@ -18,10 +18,10 @@ alias nv='ranger ~/notes'
 alias hs='history | grep -i'
 alias ls='ls -G'
 alias emacs="emacs -nw"
-<<<<<<< HEAD
-=======
+#<<<<<<< HEAD
+#=======
 #alias python='/usr/local/bin/python3.6'
->>>>>>> bba2e2d843673a254a49d6ab19e6aa357b404b72
+#>>>>>>> bba2e2d843673a254a49d6ab19e6aa357b404b72
 alias todo='todolist'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
