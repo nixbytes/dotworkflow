@@ -67,10 +67,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
 " Better CSS3 support
 Plug 'hail2u/vim-css3-syntax'
-" Flake8 python
-Plug 'nvie/vim-flake8'
 " NerdTree
 Plug 'scrooloose/nerdtree'
+
 call plug#end()
 
 " Enable just for html/css
