@@ -67,14 +67,18 @@ Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim'
 " Better CSS3 support
 Plug 'hail2u/vim-css3-syntax'
+" Flake8 python
+Plug 'nvie/vim-flake8'
 " NerdTree
 Plug 'scrooloose/nerdtree'
-
+" Update jedi
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 " Enable just for html/css
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+let g:pymode_python = 'python3'
 
 " nerdtree config
 "autocmd StdinReadPre * let s:std_in=1

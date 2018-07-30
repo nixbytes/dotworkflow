@@ -17,7 +17,7 @@ alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
 alias nv='ranger ~/notes'
 alias hs='history | grep -i'
 alias ls='ls -G'
-alias emacs="emacs -nw"
+#alias emacs="emacs -nw"
 #<<<<<<< HEAD
 #=======
 #alias python='/usr/local/bin/python3.6'
@@ -47,10 +47,10 @@ alias localip="ifconfig en0 inet | grep 'inet ' | awk ' { print $2 } '"
 # fzf command search from https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export NVM_DIR="$HOME/.nvm"
+#export NVM_DIR="$HOME/.nvm"
 
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
 
@@ -65,4 +65,4 @@ wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3 "http://translate.go
 }
 
 
-source $HOME/.cargo/env
+#source $HOME/.cargo/env
