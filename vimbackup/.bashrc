@@ -17,11 +17,6 @@ alias murphy_laws="grep -n $1 ~/.scripts/murphy_laws"
 alias nv='ranger ~/notes'
 alias hs='history | grep -i'
 alias ls='ls -G'
-#alias emacs="emacs -nw"
-#<<<<<<< HEAD
-#=======
-#alias python='/usr/local/bin/python3.6'
-#>>>>>>> bba2e2d843673a254a49d6ab19e6aa357b404b72
 alias todo='todolist'
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias cmdls="grep -i $1 ~/.scripts/clf-ALL.md"
@@ -32,29 +27,11 @@ alias sshls="grep Host ~/.ssh/config"
 alias sshconfig="less ~/.ssh/config"
 alias dirnote='cd ~/notes/'
 
-
-
-# Mac specfic commands
-
-alias hidfiles="defaults write com.apple.finder AppleShowAllFiles YES"
-alias showfiles="defaults write com.apple.finder AppleShowAllFiles NO"
-alias macmodel='sysctl hw.model'
-alias showfile='defaults write com.apple.finder AppleShowAllFiles YES;killall Finder /System/Library/CoreServices/Finder.app'
-alias hidfile='defaults write com.apple.finder AppleShowAllFiles NO;killall Finder /System/Library/CoreServices/Finder.app'
-alias update="sudo softwareupdate -i -a; brew update; brew upgrade"
-alias localip="ifconfig en0 inet | grep 'inet ' | awk ' { print $2 } '"
-
-# fzf command search from https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-#export NVM_DIR="$HOME/.nvm"
-
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion; fi
 
-# function for code that are useful
 
 # google translate
 
@@ -64,5 +41,3 @@ wget -q -U Mozilla -O $(tr ' ' _ <<< "$1"| cut -b 1-15).mp3 "http://translate.go
 
 }
 
-
-#source $HOME/.cargo/env
