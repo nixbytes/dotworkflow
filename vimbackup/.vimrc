@@ -73,6 +73,8 @@ Plug 'nvie/vim-flake8'
 Plug 'scrooloose/nerdtree'
 " Update jedi
 Plug 'davidhalter/jedi-vim'
+" Auto Pep8
+Plug 'tell-k/vim-autopep8'
 call plug#end()
 
 " Enable just for html/css
