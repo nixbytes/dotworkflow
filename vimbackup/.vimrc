@@ -1,6 +1,7 @@
 set number
 set encoding=utf-8
 set backspace=indent,eol,start
+" set spelllang=en
 " add full color in vim if supported 
 set t_Co=256
 " set background=dark
@@ -15,9 +16,9 @@ colorscheme dracula
 
 " closing tags short
 :iabbrev </ </<C-X><C-O>
+
 " Mac OSX Clipboard
 set clipboard=unnamed
-
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
@@ -61,10 +62,6 @@ Plug 'tpope/vim-commentary'
 Plug 'jelera/vim-javascript-syntax'
 " add git function and shortcut
 Plug 'tpope/vim-fugitive'
-" Plug 'amirh/html-autoclosetag'
-"Plug 'townk/vim-autoclose'
-" Plugin emmet for vim
-Plug 'mattn/emmet-vim'
 " Better CSS3 support
 Plug 'hail2u/vim-css3-syntax'
 " Flake8 python
@@ -75,6 +72,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'davidhalter/jedi-vim'
 " Auto Pep8
 Plug 'tell-k/vim-autopep8'
+" Black formator
+Plug 'ambv/black'
 call plug#end()
 
 " Enable just for html/css
