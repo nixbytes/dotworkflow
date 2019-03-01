@@ -74,13 +74,15 @@ Plug 'davidhalter/jedi-vim'
 Plug 'tell-k/vim-autopep8'
 " Black formator
 Plug 'ambv/black'
+" Python Mode
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+
+
 call plug#end()
 
 " Enable just for html/css
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 let g:pymode_python = 'python3'
-
-" nerdtree config
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Flagging Unnecessary Whitespace
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
