@@ -7,10 +7,10 @@ set t_Co=256
 " set background=dark
 let python_highlight_all=1
 syntax on
-" color dracula
-" color atomdark
-" color inkpot
-" color monokai
+
+" colorscheme atomdark
+" colorscheme inkpot
+" colorscheme monokai
 " colorscheme monokain
 colorscheme dracula
 
@@ -52,8 +52,6 @@ Plug 'sickill/vim-monokai'
 Plug 'maksimr/vim-jsbeautify'
 " display additional info
 Plug 'vim-airline/vim-airline'
-" improve HTML5
-Plug 'othree/html5.vim'
 " HTML close tag helper
 Plug 'alvan/vim-closetag'
 " improved comment shortcut
