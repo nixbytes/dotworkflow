@@ -1,4 +1,4 @@
-# dotworkflow
+# dotvim
 dotworkflow is vim and dot files used for development and systems on Linux/Unix
 
 listed items with configuration for projects
@@ -17,12 +17,3 @@ listed items with configuration for projects
 - [monokai.vim](https://github.com/sickill/vim-monokai)
 - [vim airline](https://github.com/vim-airline/vim-airline)
 - [vim fugitive](https://github.com/tpope/vim-fugitive)
-
-# add the following to profile file
-
-
-```shell
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
-```
