@@ -8,12 +8,6 @@ set t_Co=256
 let python_highlight_all=1
 syntax on
 
-" colorscheme atomdark
-" colorscheme inkpot
-" colorscheme monokai
-" colorscheme monokain
-" colorscheme dracula
-
 " closing tags short
 :iabbrev </ </<C-X><C-O>
 
