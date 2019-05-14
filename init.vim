@@ -29,10 +29,13 @@ call plug#begin('~/.vim/plugged')
 
 "vim-cpp-enhanced-highlightby Jon Haggblad
 " Additional Vim syntax highlighting for C++ (including C++11/14/17)
-
 Plug 'octol/vim-cpp-enhanced-highlight'
-
+" GIT Wrapper
 Plug 'tpope/vim-fugitive'
+" Lean & mean status/tabline for vim that's light as air
+Plug 'vim-airline/vim-airline'
+" This plugin formats your code with specific coding style using clang-format.
+Plug 'rhysd/vim-clang-format'
 
 " Initialize plugin system
 call plug#end()
