@@ -25,3 +25,14 @@ set hlsearch
 
 " Flagging Unnecessary Whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+call plug#begin('~/.vim/plugged')
+
+"vim-cpp-enhanced-highlightby Jon Haggblad
+" Additional Vim syntax highlighting for C++ (including C++11/14/17)
+
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+Plug 'tpope/vim-fugitive'
+
+" Initialize plugin system
+call plug#end()
