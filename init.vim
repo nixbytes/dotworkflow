@@ -4,7 +4,7 @@ set backspace=indent,eol,start
 " set spelllang=en
 " add full color in vim if supported 
 set t_Co=256
-" set background=dark
+set background=dark
 let python_highlight_all=1
 syntax on
 
