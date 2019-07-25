@@ -36,6 +36,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 " This plugin formats your code with specific coding style using clang-format.
 Plug 'rhysd/vim-clang-format'
-
+" This plugin adds Go language support for Vim
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Initialize plugin system
 call plug#end()

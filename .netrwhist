@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/ez/Dropbox/Repo'
+let g:netrw_dirhist_2='/Users/ez/Dropbox'
+let g:netrw_dirhist_3='/Users/ez'
+let g:netrw_dirhist_4='/Users/ez/Dropbox/Repo/CppND-Route-Planning-Project/src'
