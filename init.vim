@@ -6,6 +6,7 @@ set backspace=indent,eol,start
 set t_Co=256
 set background=dark
 let python_highlight_all=1
+colors gruvbox
 syntax on
 
 " closing tags short
@@ -38,5 +39,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'rhysd/vim-clang-format'
 " This plugin adds Go language support for Vim
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Molokai is a Vim port of the monokai theme
+Plug 'tomasr/molokai'
 " Initialize plugin system
+Plug 'morhetz/gruvbox'
 call plug#end()
