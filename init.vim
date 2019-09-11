@@ -38,7 +38,7 @@ Plug 'vim-airline/vim-airline'
 " This plugin formats your code with specific coding style using clang-format.
 Plug 'rhysd/vim-clang-format'
 " This plugin adds Go language support for Vim
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Molokai is a Vim port of the monokai theme
 Plug 'tomasr/molokai'
 " Initialize plugin system
