@@ -39,11 +39,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'rhysd/vim-clang-format'
 " This plugin adds Go language support for Vim
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-<<<<<<< HEAD
-=======
 " Molokai is a Vim port of the monokai theme
 Plug 'tomasr/molokai'
->>>>>>> 6a473a51f66c687f913eee467059a7b70aabf606
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
 call plug#end()
