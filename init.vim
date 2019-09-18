@@ -4,7 +4,7 @@ set backspace=indent,eol,start
 " set spelllang=en
 " add full color in vim if supported 
 set t_Co=256
-set background=dark
+" set background=dark
 let python_highlight_all=1
 syntax on
 
@@ -37,6 +37,6 @@ Plug 'vim-airline/vim-airline'
 " This plugin formats your code with specific coding style using clang-format.
 Plug 'rhysd/vim-clang-format'
 " This plugin adds Go language support for Vim
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Initialize plugin system
 call plug#end()
