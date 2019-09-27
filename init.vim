@@ -43,4 +43,6 @@ Plug 'rhysd/vim-clang-format'
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
+" Vim Python Black
+Plug 'psf/black'
 call plug#end()
