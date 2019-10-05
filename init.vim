@@ -6,7 +6,7 @@ set backspace=indent,eol,start
 set t_Co=256
 " set background=dark
 let python_highlight_all=1
-colors gruvbox
+colorscheme molokai 
 syntax on
 
 " closing tags short
@@ -45,4 +45,6 @@ Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 " Vim Python Black
 Plug 'psf/black'
+" Prettier format
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
