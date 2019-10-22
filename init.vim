@@ -6,7 +6,7 @@ set backspace=indent,eol,start
 set t_Co=256
 " set background=dark
 let python_highlight_all=1
-colors gruvbox
+colorscheme molokai
 syntax on
 
 " closing tags short
