@@ -36,11 +36,15 @@ Plug 'tpope/vim-fugitive'
 " Lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
 " This plugin formats your code with specific coding style using clang-format.
-Plug 'rhysd/vim-clang-format'
+"Plug 'rhysd/vim-clang-format'
 " This plugin adds Go language support for Vim
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Molokai is a Vim port of the monokai theme
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
+" Vim Python Black
+Plug 'psf/black'
+" Prettier format
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
