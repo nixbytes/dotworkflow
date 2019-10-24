@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/ez/Desktop/F1U2P2_solution/solution'
+let g:netrw_dirhist_3='/Users/ez/Desktop/F1U2P2_solution'
 let g:netrw_dirhist_2='/Users/ez/Desktop/Assault/assault'
 let g:netrw_dirhist_1='/Users/ez/Desktop/Assault'
