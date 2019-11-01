@@ -1,4 +1,4 @@
-set number
+https://yespornplease.com/v/646632369set number
 set encoding=utf-8
 set backspace=indent,eol,start
 " set spelllang=en
@@ -45,6 +45,10 @@ Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 " Vim Python Black
 Plug 'psf/black'
+" Preview colours in source code while editing
+Plug 'ap/vim-css-color'
+" Image Preview
+"Plug 'ashisha/image.vim'
 " Prettier format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
