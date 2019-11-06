@@ -1,4 +1,3 @@
-set number
 set encoding=utf-8
 set backspace=indent,eol,start
 " set spelllang=en
@@ -35,16 +34,20 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 " Lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
-" This plugin formats your code with specific coding style using clang-format.
-"Plug 'rhysd/vim-clang-format'
-" This plugin adds Go language support for Vim
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Molokai is a Vim port of the monokai theme
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
 " Vim Python Black
 Plug 'psf/black'
+" closing tag
+Plug 'alvan/vim-closetag'
+" Preview colours in source code while editing
+Plug 'ap/vim-css-color'
+" For Javascript Syntax
+Plug 'ashisha/image.vim'
+" Comment out plugin
+Plug 'tpope/vim-commentary'
 " Prettier format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 call plug#end()
