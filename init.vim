@@ -45,7 +45,7 @@ Plug 'alvan/vim-closetag'
 " Preview colours in source code while editing
 Plug 'ap/vim-css-color'
 " For Javascript Syntax
-Plug 'ashisha/image.vim'
+" Plug 'ashisha/image.vim'
 " Comment out plugin
 Plug 'tpope/vim-commentary'
 " Prettier format
