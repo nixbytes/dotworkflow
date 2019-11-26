@@ -38,8 +38,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
-" Vim Python Black
-Plug 'psf/black'
 " closing tag
 Plug 'alvan/vim-closetag'
 " Preview colours in source code while editing
