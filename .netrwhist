@@ -1,27 +1,12 @@
 let g:netrw_dirhistmax  =10
-<<<<<<< HEAD
-let g:netrw_dirhistcnt =9
-let g:netrw_dirhist_9='/Users/ez/Desktop/Udacity-FE/joe-and-code/css'
-let g:netrw_dirhist_8='/Users/ez/Desktop/Udacity-FE/joe-and-code/images'
-let g:netrw_dirhist_7='/Users/ez/Desktop/websnips'
-let g:netrw_dirhist_6='/Users/ez/Desktop/websnips/css'
-let g:netrw_dirhist_5='/Users/ez/Desktop/websnips'
-let g:netrw_dirhist_4='/Users/ez/Desktop/F1U2P2_solution/solution'
-let g:netrw_dirhist_3='/Users/ez/Desktop/F1U2P2_solution'
-let g:netrw_dirhist_2='/Users/ez/Desktop/Assault/assault'
-let g:netrw_dirhist_1='/Users/ez/Desktop/Assault'
-=======
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/nix/.config/i3xrocks'
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/Users/ez/Desktop/joe-and-code/css'
-let g:netrw_dirhist_6='/Users/ez/Desktop/joe-and-code'
-let g:netrw_dirhist_5='/Users/ez'
-let g:netrw_dirhist_4='/Users/ez/Desktop'
-let g:netrw_dirhist_3='/Users/ez/Desktop/joe-and-code'
-let g:netrw_dirhist_2='/Users/ez/Desktop/websnips/css'
-let g:netrw_dirhist_1='/Users/ez/Desktop/websnips'
-let g:netrw_dirhist_0='/Users/ez/Desktop/websnips/.git'
-let g:netrw_dirhist_9='/Users/ez/Desktop/websnips'
-let g:netrw_dirhist_8='/Users/ez/Desktop/websnips/css'
->>>>>>> af6ef378e7d5d343e2c05b84075e8a3d3e0e5315
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/Users/ez/Desktop/Landing_Page/css'
+let g:netrw_dirhist_7='/Users/ez/Desktop/Landing_Page'
+let g:netrw_dirhist_6='/Users/ez/Documents/Notes'
+let g:netrw_dirhist_5='/Users/ez/Documents'
+let g:netrw_dirhist_4='/Users/ez'
+let g:netrw_dirhist_3='/Users/ez/Desktop/Udacity-FE/Landing_Page/css'
+let g:netrw_dirhist_2='/Users/ez/Desktop/Udacity-FE/Landing_Page'
+let g:netrw_dirhist_1='/Users/ez/Desktop/Udacity-FE/Landing_Page/css'
+let g:netrw_dirhist_0='/Users/ez/Desktop/Udacity-FE/Landing_Page'
+let g:netrw_dirhist_9='/Users/ez/Desktop/Udacity-FE/Landing_Page/css'
