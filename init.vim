@@ -47,6 +47,8 @@ Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 " Prettier format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Rust Plugin
+Plug 'rust-lang/rust.vim'
 call plug#end()
 
 " Nerdtree settings
