@@ -49,6 +49,8 @@ Plug 'tpope/vim-commentary'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Rust Plugin
 Plug 'rust-lang/rust.vim'
+" Rust Autocompleted
+Plug 'racer-rust/vim-racer'
 call plug#end()
 
 " Nerdtree settings
