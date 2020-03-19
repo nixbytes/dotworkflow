@@ -1,0 +1,2 @@
+alias ll="ls -la"
+alias Systembackup="sudo rsync -arvh --progress  /home/nix/  /run/media/nix/1TB/BACKUPS/"
