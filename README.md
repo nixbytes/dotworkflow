@@ -5,8 +5,16 @@ listed items with configuration for projects
 
 - vimrc file for vim config
 - vim plugins
-  - vim-clang-format
+  - gruvbox
+  - molokai
+  - nerdtree
+  - rust.vim
   - vim-airline
+  - vim-closetag
+  - vim-commentary
   - vim-cpp-enhanced-highlight
+  - vim-css-color
   - vim-fugitive
+  - vim-prettier
+  - vim-racer
 
