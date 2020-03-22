@@ -47,7 +47,7 @@ Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary'
 " Prettier format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" Go Vim
+" Go development plugin for Vim8
 Plug 'govim/govim'
 " Rust Plugin
 Plug 'rust-lang/rust.vim'
