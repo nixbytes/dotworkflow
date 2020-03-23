@@ -54,7 +54,7 @@ Plug 'Valloric/YouCompleteMe'
 " Git Intergration
 Plug 'tpope/vim-fugitive'
 " ZenBurn Theme
-Plugin 'jnurmine/Zenburn'
+Plug 'jnurmine/Zenburn'
 " closing tag
 Plug 'alvan/vim-closetag'
 " Preview colours in source code while editing

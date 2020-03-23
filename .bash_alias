@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 alias ll="ls -la"
 
 # list duplication of file wuth size and then checksum
