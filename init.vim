@@ -7,21 +7,31 @@ set t_Co=256
 let python_highlight_all=1
 colorscheme molokai
 syntax on
-
 " closing tags short
 :iabbrev </ </<C-X><C-O>
 
 " Mac OSX Clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 " set textwidth=79  " lines longer than 79 columns will be broken
-set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
-set tabstop=4     " a hard TAB displays as 4 columns
-set expandtab     " insert spaces when hitting TABs
-set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
-set shiftround    " round indent to multiple of 'shiftwidth'
-set autoindent    " align the new line indent with the previous line
-set incsearch
-set hlsearch
+" set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
+" set tabstop=4     " a hard TAB displays as 4 columns
+" set expandtab     " insert spaces when hitting TABs
+" set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+" set shiftround    " round indent to multiple of 'shiftwidth'
+" set autoindent    " align the new line indent with the previous line
+" set incsearch
+" set hlsearch
+" Python settings
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
 
 " Flagging Unnecessary Whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
@@ -39,6 +49,12 @@ Plug 'vim-airline/vim-airline'
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
+" Auto-Completed
+Plug 'Valloric/YouCompleteMe'
+" Git Intergration
+Plug 'tpope/vim-fugitive'
+" ZenBurn Theme
+Plugin 'jnurmine/Zenburn'
 " closing tag
 Plug 'alvan/vim-closetag'
 " Preview colours in source code while editing
