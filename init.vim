@@ -22,15 +22,15 @@ syntax on
 " set incsearch
 " set hlsearch
 " Python settings
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+            \set tabstop=4
+            \set softtabstop=4
+            \set shiftwidth=4
+            \set textwidth=79
+            \set expandtab
+            \set autoindent
+            \set fileformat=unix
 
 
 " Flagging Unnecessary Whitespace
@@ -41,6 +41,8 @@ Plug 'scrooloose/nerdtree'
 "vim-cpp-enhanced-highlightby Jon Haggblad
 " Additional Vim syntax highlighting for C++ (including C++11/14/17)
 Plug 'octol/vim-cpp-enhanced-highlight'
+" Python mode
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " GIT Wrapper
 Plug 'tpope/vim-fugitive'
 " Lean & mean status/tabline for vim that's light as air
@@ -51,6 +53,7 @@ Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 " Auto-Completed
 Plug 'Valloric/YouCompleteMe'
+
 " Git Intergration
 Plug 'tpope/vim-fugitive'
 " ZenBurn Theme
