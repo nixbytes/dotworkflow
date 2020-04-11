@@ -53,7 +53,6 @@ Plug 'tomasr/molokai'
 Plug 'morhetz/gruvbox'
 " Auto-Completed
 Plug 'Valloric/YouCompleteMe'
-
 " Git Intergration
 Plug 'tpope/vim-fugitive'
 " ZenBurn Theme
@@ -67,7 +66,7 @@ Plug 'tpope/vim-commentary'
 " Prettier format
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Go development plugin for Vim8
-Plug 'govim/govim'
+"Plug 'govim/govim'
 " Rust Plugin
 Plug 'rust-lang/rust.vim'
 " Rust Autocompleted
