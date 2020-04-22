@@ -22,7 +22,6 @@ syntax on
 " set incsearch
 " set hlsearch
 " Python settings
-" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 au BufNewFile,BufRead *.py
             \set tabstop=4
             \set softtabstop=4
@@ -33,16 +32,30 @@ au BufNewFile,BufRead *.py
             \set fileformat=unix
 
 
+"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
 " Flagging Unnecessary Whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 call plug#begin('~/.vim/plugged')
 " Nerdtree for files and folder
 Plug 'scrooloose/nerdtree'
+" Python Black
+"Plug 'psf/black'
 "vim-cpp-enhanced-highlightby Jon Haggblad
 " Additional Vim syntax highlighting for C++ (including C++11/14/17)
 Plug 'octol/vim-cpp-enhanced-highlight'
 " Python mode
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+"Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " GIT Wrapper
 Plug 'tpope/vim-fugitive'
 " Lean & mean status/tabline for vim that's light as air
@@ -51,8 +64,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'tomasr/molokai'
 " Initialize plugin system
 Plug 'morhetz/gruvbox'
+" Color Theme ZenBurn
+Plug 'jnurmine/Zenburn'
 " Auto-Completed
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+Plug 'vim-syntastic/syntastic'
 " Git Intergration
 Plug 'tpope/vim-fugitive'
 " ZenBurn Theme
@@ -64,13 +80,13 @@ Plug 'ap/vim-css-color'
 " Comment out plugin
 Plug 'tpope/vim-commentary'
 " Prettier format
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Go development plugin for Vim8
 "Plug 'govim/govim'
 " Rust Plugin
-Plug 'rust-lang/rust.vim'
+"Plug 'rust-lang/rust.vim'
 " Rust Autocompleted
-Plug 'racer-rust/vim-racer'
+"Plug 'racer-rust/vim-racer'
 call plug#end()
 
 " Nerdtree settings
