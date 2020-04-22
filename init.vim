@@ -79,9 +79,9 @@ Plug 'alvan/vim-closetag'
 Plug 'ap/vim-css-color'
 " Comment out plugin
 Plug 'tpope/vim-commentary'
-" Prettier format
+"Prettier format
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" Go development plugin for Vim8
+"Go development plugin for Vim8
 "Plug 'govim/govim'
 " Rust Plugin
 "Plug 'rust-lang/rust.vim'
