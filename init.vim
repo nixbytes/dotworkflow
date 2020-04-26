@@ -9,6 +9,7 @@ colorscheme molokai
 syntax on
 " closing tags short
 :iabbrev </ </<C-X><C-O>
+:hi Search ctermbg=white ctermfg=red
 
 " Mac OSX Clipboard
 " set clipboard=unnamed
@@ -80,7 +81,7 @@ Plug 'ap/vim-css-color'
 " Comment out plugin
 Plug 'tpope/vim-commentary'
 "Prettier format
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 "Go development plugin for Vim8
 "Plug 'govim/govim'
 " Rust Plugin
