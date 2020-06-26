@@ -1,4 +1,7 @@
 set encoding=utf-8
+set noswapfile
+set noshowmode
+set ts=2 sw=2 sts=2 et
 set backspace=indent,eol,start
 " set spelllang=en
 " add full color in vim if supported 
@@ -51,10 +54,10 @@ call plug#begin('~/.vim/plugged')
 " Nerdtree for files and folder
 Plug 'scrooloose/nerdtree'
 " Python Black
-"Plug 'psf/black'
+Plug 'psf/black'
 "vim-cpp-enhanced-highlightby Jon Haggblad
 " Additional Vim syntax highlighting for C++ (including C++11/14/17)
-Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'octol/vim-cpp-enhanced-highlight'
 " Python mode
 "Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " GIT Wrapper
@@ -84,13 +87,22 @@ Plug 'tpope/vim-commentary'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 "Go development plugin for Vim8
 "Plug 'govim/govim'
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Rust Plugin
 "Plug 'rust-lang/rust.vim'
 " Rust Autocompleted
 "Plug 'racer-rust/vim-racer'
+" Clang Format
+Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 " Nerdtree settings
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Map <leader> to comma
+let mapleader=","
+
+if has("autocmd")
+   autocmd FileType go set ts=2 sw=2 sts=2 noet nolist autowrite
+endif
