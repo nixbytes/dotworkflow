@@ -54,7 +54,7 @@ call plug#begin('~/.vim/plugged')
 " Nerdtree for files and folder
 Plug 'scrooloose/nerdtree'
 " Python Black
-Plug 'psf/black'
+" Plug 'psf/black'
 "vim-cpp-enhanced-highlightby Jon Haggblad
 " Additional Vim syntax highlighting for C++ (including C++11/14/17)
 " Plug 'octol/vim-cpp-enhanced-highlight'
