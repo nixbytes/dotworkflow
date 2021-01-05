@@ -4,3 +4,32 @@ alias ll="ls -la"
 
 # list duplication of file wuth size and then checksum
 alias find_duplication="find -not -empty -type f -printf "%s\n" | sort -rn | uniq -d | xargs -I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 --all-repeated=separate"
+
+# Ensure vim is default editor
+
+export EDITOR=vim
+
+# custom alias for bash
+alias hs='history | grep -i'
+alias ls='ls -G'
+alias genpasswd='openssl rand -base64'
+alias sshls="grep Host ~/.ssh/config"
+alias sshconfig="less ~/.ssh/config"
+alias listallcli="ls /usr/bin | xargs whatis | grep -v nothing | less"
+alias TodayWeather="curl wttr.in/$1"
+
+# Install vim Plug
+
+alias InstallPlug="curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+# Search commandlinefu.com from the command line using the API
+cmdfu(){ 
+
+curl -L "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | openssl base64)/plaintext"; 
+
+}
+
+
+alias cpp11="g++ -Wall --std=c++11"
+alias cpp14="g++ -Wall --std=c++14"
+alias cpp17="g++ -Wall --std=c++17"

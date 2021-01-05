@@ -52,7 +52,7 @@ au BufNewFile,BufRead *.py
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 call plug#begin('~/.vim/plugged')
 " Nerdtree for files and folder
-Plug 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 " Python Black
 " Plug 'psf/black'
 "vim-cpp-enhanced-highlightby Jon Haggblad
@@ -97,8 +97,8 @@ Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 " Nerdtree settings
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Map <leader> to comma
 let mapleader=","
