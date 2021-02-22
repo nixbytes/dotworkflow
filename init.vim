@@ -14,18 +14,6 @@ syntax on
 :iabbrev </ </<C-X><C-O>
 :hi Search ctermbg=white ctermfg=red
 
-" Mac OSX Clipboard
-" set clipboard=unnamed
-" set textwidth=79  " lines longer than 79 columns will be broken
-" set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
-" set tabstop=4     " a hard TAB displays as 4 columns
-" set expandtab     " insert spaces when hitting TABs
-" set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
-" set shiftround    " round indent to multiple of 'shiftwidth'
-" set autoindent    " align the new line indent with the previous line
-" set incsearch
-" set hlsearch
-" Python settings
 au BufNewFile,BufRead *.py
             \set tabstop=4
             \set softtabstop=4
@@ -36,30 +24,9 @@ au BufNewFile,BufRead *.py
             \set fileformat=unix
 
 
-"au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
-"python with virtualenv support
-"py << EOF
-"import os
-"import sys
-"if 'VIRTUAL_ENV' in os.environ:
-"  project_base_dir = os.environ['VIRTUAL_ENV']
-"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"  execfile(activate_this, dict(__file__=activate_this))
-"EOF
-
 " Flagging Unnecessary Whitespace
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 call plug#begin('~/.vim/plugged')
-" Nerdtree for files and folder
-" Plug 'scrooloose/nerdtree'
-" Python Black
-" Plug 'psf/black'
-"vim-cpp-enhanced-highlightby Jon Haggblad
-" Additional Vim syntax highlighting for C++ (including C++11/14/17)
-" Plug 'octol/vim-cpp-enhanced-highlight'
-" Python mode
-"Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 " GIT Wrapper
 Plug 'tpope/vim-fugitive'
 " Lean & mean status/tabline for vim that's light as air
@@ -96,11 +63,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'rhysd/vim-clang-format'
 call plug#end()
 
-" Nerdtree settings
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Map <leader> to comma
 let mapleader=","
 
 if has("autocmd")
