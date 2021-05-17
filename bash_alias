@@ -24,7 +24,7 @@ alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
-
+eval $(ssh-agent)
 
 # Install vim Plug
 
@@ -36,7 +36,6 @@ cmdfu(){
 curl -L "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | openssl base64)/plaintext"; 
 
 }
-
 
 alias cpp11="g++ -Wall --std=c++11"
 alias cpp14="g++ -Wall --std=c++14"

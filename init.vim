@@ -58,8 +58,6 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Rust Plugin
 Plug 'rust-lang/rust.vim'
 " Rust Autocompleted
-"Plug 'racer-rust/vim-racer'
-" Clang Format
 Plug 'rhysd/vim-clang-format'
 call plug#end()
 
