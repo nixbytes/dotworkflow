@@ -21,6 +21,23 @@ alias cpp11="g++ -Wall --std=c++11"
 alias cpp14="g++ -Wall --std=c++14"
 alias cpp17="g++ -Wall --std=c++17"
 
+# Color Main Pages
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# may functions to change wallpaper
+
+function Change_Theme(){
+  
+  python3 -m pywal -i $1
+
+}
+
 # Install vim Plug
 
 InstallPlug(){
