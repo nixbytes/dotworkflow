@@ -4,15 +4,20 @@
 
 # terminal emulator
 super + Return
-  alacritty	
+  alacritty
 
 # program launcher
 super + @space
-#	dmenu_run
-	rofi -show drun -show-icons -config ~/.config/i3/rofi-theme/config.rasi
+	rofi -show drun -show-icons -config ~/.config/rofi/config.rasi
+  #rofi -modi run,drun,window -show drun -show-icons -sidebar-mode -config ~/.config/rofi/config.rasi
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# Launch command
+super + r
+  rofi -show run -config ~/.config/rofi/config.rasi
 
 #
 # bspwm hotkeys
@@ -123,7 +128,7 @@ super + {Left,Down,Up,Right}
 
 # Lock session
 super + l
-  slockA
+  i3lock -i ~/Pictures/backgrounds/sky-plane-fog.png
 
 #################################################################
 #     MULTIMEDIA KEYS
@@ -131,15 +136,22 @@ super + l
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer -D pulse sset Master 10%+
-
+  pactl set-sink-volume @DEFAULT_SINK@ +10%
 #Lowers volume
 XF86AudioLowerVolume
-    amixer -D pulse sset Master 10%-
+  pactl set-sink-volume @DEFAULT_SINK@ -10%
 
 #Mute
 XF86AudioMute
-    amixer -D pulse set Master 1+ toggle 
+  pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+################################################################
+#    BRIGHTNESS KEYS
+################################################################
 
 
+XF86MonBrightnessUp
+  light -A 10
 
+XF86MonBrightnessDown
+  light -U 10

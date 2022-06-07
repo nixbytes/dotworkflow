@@ -1,13 +1,15 @@
 #!/bin/sh
-
+pkill sxhkd
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom --animations --animation-window-mass 0.5 --animation-stiffness 350&
-feh --bg-fill --randomize $HOME/Pictures/backgrounds/* &
+#picom --animations --animation-window-mass 0.5 --animation-stiffness 350&
+picom &
+#feh --bg-fill --randomize $HOME/Pictures/backgrounds/* &
+python3 -m pywal -i $HOME/Pictures/backgrounds/cyberpunk-sunset-wallpaper.jpg &
 
 # PolyBar settings
-pkill polybar
-sleep 1;
-polybar mybar -c ~/.config/polybar/config.ini &
+#pkill polybar
+#sleep 1;
+#polybar mybar -c ~/.config/polybar/config.ini &
 
 # Workspaces
 bspc monitor -d 1 2 3 4 5 6 7
@@ -16,7 +18,7 @@ bspc monitor -d 1 2 3 4 5 6 7
 bspc config border_width         5
 bspc config window_gap           10
 bspc config split_ratio          0.5
-bspc config top_padding          10
+bspc config top_padding          1
 
 # source the colors.
 . "${HOME}/.cache/wal/colors.sh"

@@ -9,8 +9,8 @@ PS1="\[\033[01;32m\](\A)\[\033[00m\]\[\033[01;34m\][\W]\[\033[00m\]$(git branch 
 alias hs='history | grep -i'
 alias ls='ls -G'
 alias genpasswd='openssl rand -base64'
-alias sshls="grep Host ~/.ssh/config"
-alias sshconfig="less ~/.ssh/config"
+alias sshls="grep Host $HOME/.ssh/config"
+alias sshconfig="less $HOME/.ssh/config"
 alias listallcli="ls /usr/bin | xargs whatis | grep -v nothing | less"
 alias TodayWeather="curl wttr.in/$1"
 alias ls='ls --color=auto'
@@ -18,6 +18,8 @@ alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
 alias l.="ls -A | egrep '^\.'"
+alias sxhk_key='less ~/.config/sxhkd/sxhkdrc'
+alias BATTERY_CHARGE='acpi'
 alias cpp11="g++ -Wall --std=c++11"
 alias cpp14="g++ -Wall --std=c++14"
 alias cpp17="g++ -Wall --std=c++17"
@@ -35,7 +37,7 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 function Change_Theme(){
 
-  python3 -m pywal -i $1
+  wal -i $1
 
 }
 
