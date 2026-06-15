@@ -1,3 +1,4 @@
+```
     .--.
    |o_o |
    |:_/ |
@@ -5,7 +6,7 @@
  (|     | )
 /'\_   _/`\
 \___)=(___/
-
+```
 # dotworkflow
 
 Personal dotfiles for development on Linux/Unix and macOS.
