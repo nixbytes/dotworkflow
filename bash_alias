@@ -1,0 +1,64 @@
+# Ensure vim is default editor
+
+eval $(ssh-agent)
+export EDITOR=vim
+
+PS1="\[\033[01;32m\](\A)\[\033[00m\]\[\033[01;34m\][\W]\[\033[00m\]$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\n\\$ \[$(tput sgr0)\]"
+
+# custom alias for bash
+alias hs='history | grep -i'
+alias ls='ls -G'
+alias genpasswd='openssl rand -base64'
+alias sshls="grep Host $HOME/.ssh/config"
+alias sshconfig="less $HOME/.ssh/config"
+alias listallcli="ls /usr/bin | xargs whatis | grep -v nothing | less"
+alias TodayWeather="curl wttr.in/$1"
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -la'
+alias l='ls'
+alias l.="ls -A | egrep '^\.'"
+alias sxhk_key='less ~/.config/sxhkd/sxhkdrc'
+alias BATTERY_CHARGE='acpi'
+alias cpp11="g++ -Wall --std=c++11"
+alias cpp14="g++ -Wall --std=c++14"
+alias cpp17="g++ -Wall --std=c++17"
+
+# Color Main Pages
+export LESS_TERMCAP_mb=$'\e[1;32m'
+export LESS_TERMCAP_md=$'\e[1;32m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[01;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# functions to change wallpaper
+
+function Change_Theme(){
+
+  wal -i $1
+
+}
+
+# Install vim Plug
+
+InstallPlug(){
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+}
+
+# Search commandlinefu.com from the command line using the API
+
+cmdfu(){
+  curl -L "http://www.commandlinefu.com/commands/matching/$@/$(echo -n $@ | openssl base64)/plaintext";
+
+}
+
+# list duplication of file with size and then checksum
+
+find_duplication(){
+
+  find -not -empty -type f -printf "%s\n" | sort -rn | uniq -d | xargs -I{} -n1 find -type f -size {}c -print0 | xargs -0 md5sum | sort | uniq -w32 --all-repeated=separate
+}
+
+
